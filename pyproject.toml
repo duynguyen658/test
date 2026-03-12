@@ -1,0 +1,41 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+exclude = '''/(\.venv|build|dist|node_modules|candidate\/node_modules)/'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+
+[tool.flake8]
+max-line-length = 88
+ignore = [
+  "E203",
+  "W503",
+  "E501",  # tạm thời bỏ qua line quá dài
+  "F401",  # tạm thời bỏ qua import không dùng
+  "E722",  # tạm thời bỏ qua bare except
+]
+exclude = [
+  ".git",
+  "__pycache__",
+  "build",
+  "dist",
+  ".venv",
+  "node_modules",
+  "candidate/node_modules",
+]
+[tool.pydocstyle]
+convention = "google"
+match = "(?!test_).*\\.py"
+add-ignore = [
+  "D100",  # missing module docstring
+  "D103",  # missing function docstring
+  "D104",  # package __init__
+  "D202",  # blank line sau docstring
+  "D205",  # blank line giữa summary và description
+  "D212",  # summary không phải trên dòng đầu
+  "D415",  # summary không kết thúc bằng . ? !
+  "D403",  # chữ cái đầu trong summary phải viết hoa
+]

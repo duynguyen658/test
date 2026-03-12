@@ -1,4 +1,4 @@
-![n8n-workflow_1](https://github.com/user-attachments/assets/5726718c-f2cb-4182-8d28-562d6503fefa)# Candidate Data Pipeline API
+# Candidate Data Pipeline API
 
 ## 1. Giới thiệu
 

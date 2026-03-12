@@ -273,38 +273,40 @@ Lưu các bản ghi lỗi vào bảng error_logs.
 
 ## 9. Workflow n8n
 
-Data Source (Google Sheets)
-│
-▼
-Data Merge
-│
-▼
-Schema Validation
-│
-├── Invalid Data → Error Logs
-│
-▼
-Business Validation
-│
-▼
-Data Cleaning
-│
-▼
-Data Quality Check
-│
-▼
-Database Sync
-│
-▼
-PostgreSQL
+**Luồng tổng quát**
 
-Pipeline xử lý dữ liệu được tự động hóa bằng n8n.
+```text
+Data Source (Google Sheets)
+        │
+        ▼
+Data Merge (n8n)
+        │
+        ▼
+Schema Validation (API)
+        │
+        ├── Invalid Data → Error Logs (API + PostgreSQL)
+        │
+        ▼
+Business Validation (API)
+        │
+        ▼
+Data Cleaning (API)
+        │
+        ▼
+Data Quality Check (API)
+        │
+        ▼
+Database Sync (API → PostgreSQL)
+```
+
+Pipeline xử lý dữ liệu được tự động hóa bằng **n8n** và các API trong hệ thống này.
 
 <p align="center">
-  <img src="images/n8n-workflow_1.jpg" width="48%">
-  <img src="images/n8n-workflow_2.png" width="48%">
+  <img src="images/n8n-workflow-1.png" alt="n8n workflow 1" width="48%">
+  <img src="images/n8n-workflow-2.png" alt="n8n workflow 2" width="48%">
 </p>
-------------------------------------------------------------------------
+
+---
 
 ## 10. Logging & Monitoring
 

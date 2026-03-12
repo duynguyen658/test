@@ -302,10 +302,9 @@ Database Sync (API → PostgreSQL)
 Pipeline xử lý dữ liệu được tự động hóa bằng **n8n** và các API trong hệ thống này.
 
 <p align="center">
-  <img src="images/n8n-workflow_1.png" alt="n8n workflow 1" width="48%">
-  <img src="images/n8n-workflow_2.png" alt="n8n workflow 2" width="48%">
+  <img src="images/n8n-workflow.png" width="48%">
+  <img src="images/n8n-workflow2.png" width="48%">
 </p>
-
 ---
 
 ## 10. Logging & Monitoring

@@ -1,4 +1,4 @@
-# Candidate Data Pipeline API
+![n8n-workflow_1](https://github.com/user-attachments/assets/5726718c-f2cb-4182-8d28-562d6503fefa)# Candidate Data Pipeline API
 
 ## 1. Giới thiệu
 
@@ -301,10 +301,9 @@ Database Sync (API → PostgreSQL)
 
 Pipeline xử lý dữ liệu được tự động hóa bằng **n8n** và các API trong hệ thống này.
 
-<p align="center">
-  <img src="images/n8n-workflow.png" width="48%">
-  <img src="images/n8n-workflow2.png" width="48%">
-</p>
+![n8n-workflow_1](https://github.com/user-attachments/assets/c115b61e-16e2-4a7f-84d4-19658603bb03)
+![n8n-workflow_2](https://github.com/user-attachments/assets/a4f7d72d-4410-44da-9c71-e32f9a30f237)
+
 ---
 
 ## 10. Logging & Monitoring

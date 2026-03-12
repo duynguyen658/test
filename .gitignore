@@ -1,0 +1,21 @@
+# environment variables
+.env
+.env.local
+.env.*
+
+# python
+__pycache__/
+*.pyc
+
+# node
+node_modules/
+
+# logs
+*.log
+
+# OS
+.DS_Store
+
+# Google credentials
+google-credentials.json
+service-account.json
